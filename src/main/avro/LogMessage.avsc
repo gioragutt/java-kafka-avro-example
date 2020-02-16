@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "LogMessage",
+  "namespace": "org.mashov.giorag.avro",
+  "fields": [
+    {
+      "name": "level",
+      "type": "string",
+      "doc": "level of the log"
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "doc": "content of the log"
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "doc": "source of the log"
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
