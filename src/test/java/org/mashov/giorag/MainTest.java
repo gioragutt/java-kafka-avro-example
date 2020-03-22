@@ -51,13 +51,13 @@ public class MainTest {
 
     @Test
     public void testWithAtomicReference() {
-        AtomicReference<String> future = expectEventAtomicRef();
+        AtomicReference<String> ref = expectEventAtomicRef();
 
         String event = Awaitility
                 .await()
                 .atMost(Durations.FIVE_SECONDS)
                 .pollDelay(Duration.ZERO)
-                .until(future::get, Objects::nonNull);
+                .until(ref::get, Objects::nonNull);
 
         Assert.assertEquals("KAPALA", event);
     }
