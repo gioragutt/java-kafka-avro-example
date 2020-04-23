@@ -28,7 +28,7 @@ avro {
 }
 
 dependencies {
-    compile group: 'org.apache.avro', name: 'avro', version: '1.9.1'
+    compile group: 'org.apache.avro', name: 'avro', version: '1.9.2'
     compile group: 'org.apache.kafka', name: 'kafka-clients', version: '2.4.0'
     compile group: 'io.confluent', name: 'kafka-avro-serializer', version: '5.3.2'
     compile 'io.deepstream:deepstream.io-client-java:2.2.2'
